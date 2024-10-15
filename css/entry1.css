@@ -1,0 +1,95 @@
+body {
+    background-color: #000000; 
+    color: #8d0707;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); 
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Pinyon+Script&display=swap');
+  
+  :root {
+  
+      /* VARIABLES */
+  
+      /* Typography */
+    --headingFont: 'DM Serif Display', sans-serif;
+    --bodyFont: 'DM Serif Display', sans-serif;
+  
+    --baseFontSize: clamp(0.75rem, 0.78rem + 0.38vw, 1.25rem);
+  
+    --type-scale: 1.57;
+  }
+  html {
+      font-size: var(--baseFontSize);
+      scroll-behavior: smooth;
+      font-family: var(--bodyFont);
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--headingFont);
+      margin-bottom: var(--space-3);
+    }  
+
+        /* basic grids */
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 1vw;
+        height: 40vw auto;
+        
+        background-image: url("/Users/yaninghu/Desktop/hc-framework-main/images/photo2.png");
+        background-size: cover; /* Adjust image size */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat;
+
+        padding-left: 5vw;
+    }
+    .custom-line {
+        border: none; /* Remove default border */
+        height: 1px; /* Set line thickness */
+        background-color: #ffffff; /* Set color */
+        margin: 2rem auto; /* Center it and add margin */
+        width: 90vw; /* Line width */
+      }
+
+.second {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2.5vw;
+    grid-row-gap: 0px;
+    width: 90vw;
+}     
+
+.third {
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: 0.7fr 1.6fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2.5vw;
+    grid-row-gap: 0px;
+    width: 90vw;
+    justify-content: center; /* Centers content vertically */
+}
+
+  nav {
+    margin-left: 5vw;
+    height: 80px;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px)/2);
+  }
+  nav a {
+      color: #8d0707;
+      padding: 0 1.5rem;
+  }
+  
+  figure img {
+    width: 100px;
+    height: auto;
+    margin-top: 3rem;
+  }
+  
